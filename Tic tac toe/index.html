@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/v4-shims.js"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <section class="first-page">
+        <div class="mode-selection">
+            <h2>Choose your preferred mode:</h2>
+            <button class="one-btn">Single Player  <i class="fas fa-robot"></i></button>
+            <button class="two-btn">Two Players  <i class="fas fa-user-friends"></i></button>
+        </div>
+    </section>
+    <section class="second-page">
+        <div class="player-selection">
+            <h2>Who would you like to begin first?</h2>
+            <button class="btnX" onclick="beginX()">You</button>
+            <button class="btnO" onclick="beginO()">Bot</button>
+        </div>
+       
+        <div class="player-selection2">
+            <h2>Who would you like to begin first?</h2>
+            <button class="btnX" onclick="beginX()">X</button>
+            <button class="btnO" onclick="beginO()">O</button>
+        </div>
+    </section>
+    <div class="name">
+        <form>
+          <label for="name">Player 1</label>
+          <input
+            type="text"
+            id="player-1"
+            placeholder="Enter Name"
+            autocomplete="off"
+            required
+          /><br />
+          <label for="name">Player 2</label>
+          <input
+            type="text"
+            id="player-2"
+            placeholder="Enter Name"
+            autocomplete="off"
+            required
+          /><br />
+          <input type="submit" value="Submit" id="submit">
+        </form>
+      </div>
+
+      <p id="player-turn"></p>
+    <section class="game-page">
+      
+    
+        <table class="board">
+          <tr>
+            <td class="cell" id="1"><div></div></td>
+            <td class="cell" id="2"><div></div></td>
+            <td class="cell" id="3"><div></div></td>
+          </tr>
+          <tr>
+            <td class="cell" id="4"><div></div></td>
+            <td class="cell" id="5"><div></div></td>
+            <td class="cell" id="6"><div></div></td>
+          </tr>
+          <tr>
+            <td class="cell" id="7"><div></div></td>
+            <td class="cell" id="8"><div></div></td>
+            <td class="cell" id="9"><div></div></td>
+          </tr>
+        </table>
+        <button class="restart">Restart</button>
+        <button class="reset">Reset Mode</button>
+        
+      
+    </section>
+
+  <audio id="myAudio">
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="button-11.mp3" type="audio/mp3">
+  </audio>
+</body>
+</html>
